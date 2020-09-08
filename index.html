@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login page</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+    <!--Startsidan med log-in-->
+    <div id="page1">
+
+        <div id="divlogin">
+        
+            <input type="text" id="inpUsername" onfocus="this.value=''">
+            <br>
+            <input type="text" id="inpPassword" onfocus="this.value=''">
+            <input type="button" value="Log in" id="logInBtn" >
+        </div>
+        
+    </div>
+
+    <!--Sida man kommer till om man skriver rätt lösen/username-->
+    <div id="page2" style="display: none;">
+        
+        <h1>Välkommen!</h1>
+        <input type="button" value="Log out" id="logOutBtn">
+
+    </div>
+
+    <!--Sida man kommer till om man skriver fel lösen/username-->
+    <div id="page3" style="display: none;">
+
+        <h1>Vänligen fyll i rätt namn och lösenord!</h1>
+        <input type="button" value="Log out" id="toLogIn">
+
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>
