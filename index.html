@@ -7,18 +7,23 @@
     <link rel="stylesheet" href="style.css">
 
 </head>
-<body>
+<body background="img/cool-background.png">
 
+    <!--<img src="img/cool-background.png" alt="" id="cool-background">-->
     <!--Startsidan med log-in-->
     <div id="page1">
 
-        <h3 id="loginText">Vänligen fyll i användarnamn och lösenord</h3>
+        <h1 id="loginText">Vänligen fyll i användarnamn och lösenord</h1>
 
+        <img src="img/loginpage.jpg" alt="welcomePic" id="Img">
+
+        
         <div id="divlogin">
 
-            
+            <p>Användarnamn</p>
             <input type="text" id="inpUsername" onfocus="this.value=''"> 
             <br>
+            <p>Lösenord</p>
             <input type="password" id="inpPassword" onfocus="this.value=''">                                
             <input type="button" value="Log in" id="logInBtn" >
 
@@ -28,6 +33,8 @@
 
     <!--Sida man kommer till om man skriver rätt lösen/username-->
     <div id="page2" style="display: none;">
+
+        <img src="img/welcomepage.png" alt="welcomePic" id="Img">
         
         <h1 id="welcometext">Välkommen till hemsidan!</h1>
         <input type="button" value="Log out" id="logOutBtn">
@@ -37,8 +44,10 @@
     <!--Sida man kommer till om man skriver fel lösen/username-->
     <div id="page3" style="display: none;">
 
-        <h1 id="fillintext">Vänligen fyll i rätt namn och lösenord!</h1>
-        <input type="button" value="To Log-in" id="toLogIn">
+        <img src="img/backtologin.png" alt="welcomePic" id="Img">
+
+        <h1 id="toLogInText">Vänligen fyll i rätt namn och lösenord!</h1>
+        <input type="button" value="To Log-in" id="toLogInBtn">
 
     </div>
     
