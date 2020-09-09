@@ -1,8 +1,8 @@
 const logInBtn = document.getElementById('logInBtn');
 let inpUsername = document.getElementById('inpUsername');
 let inpPassword = document.getElementById('inpPassword');
-let logOutBtn = document.getElementById('logOutBtn');
-let toLogIn = document.getElementById('toLogIn');
+const logOutBtn = document.getElementById('logOutBtn');
+const toLogInBtn = document.getElementById('toLogInBtn');
 
 let userName = "test";
 let pass = 1234;
@@ -50,7 +50,7 @@ logOutBtn.addEventListener('click', function(){
 });
 
 //Klickfunktion som tar tillbaka en till log-in sidan 
-toLogIn.addEventListener('click', function(){
+toLogInBtn.addEventListener('click', function(){
 
     document.getElementById('page1').style.display='block';
     document.getElementById('page3').style.display='none';
