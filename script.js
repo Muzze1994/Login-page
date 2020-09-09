@@ -4,11 +4,10 @@ let inpPassword = document.getElementById('inpPassword');
 let logOutBtn = document.getElementById('logOutBtn');
 let toLogIn = document.getElementById('toLogIn');
 
-let filled = true;
 let userName = "test";
 let pass = 1234;
 
-//Funktion för att dölja och visa hemsidor
+//Funktion för att dölja och visa vyer
 function show(shown, hidden) {
     document.getElementById(shown).style.display='block';
     document.getElementById(hidden).style.display='none';
