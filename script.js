@@ -4,8 +4,8 @@ let inpPassword = document.getElementById('inpPassword');
 const logOutBtn = document.getElementById('logOutBtn');
 const toLogInBtn = document.getElementById('toLogInBtn');
 
-let userName = "test";
-let pass = 1234;
+const userName = "test";
+const pass = 1234;
 
 //Funktion för att dölja och visa vyer
 function show(shown, hidden) {
@@ -25,15 +25,15 @@ logInBtn.addEventListener('click', function(){
         localStorage.setItem('Username', inpUsername.value);
         localStorage.setItem('Password', inpPassword.value);
 
-            
-        document.getElementById('page1').style.display='none';
+        
+        //Visar page2 och gömmer page1
         return show('page2','page1');
         
         } 
    
             else  {
 
-                document.getElementById('page1').style.display='none';
+                //Visar page3 och gömmer page1
                 return show('page3', 'page1')
 
             }
@@ -44,6 +44,7 @@ logOutBtn.addEventListener('click', function(){
 
     localStorage.clear();
     document.getElementById('page1').style.display='block';
+    //Visar page1 och gömmer page2
     return show('page1','page2');
         
 
@@ -52,9 +53,8 @@ logOutBtn.addEventListener('click', function(){
 //Klickfunktion som tar tillbaka en till log-in sidan 
 toLogInBtn.addEventListener('click', function(){
 
-    document.getElementById('page1').style.display='block';
-    document.getElementById('page3').style.display='none';
-    return show('page1','page2');
+    //Visar page1 och gömmer page2
+    return show('page1','page3');
 
 
 });  
@@ -64,6 +64,7 @@ if ('Username' && 'Password' in localStorage){
 
     document.getElementById('page1').style.display='none';
     document.getElementById('page2').style.display='block';
+    
 }
     
 
